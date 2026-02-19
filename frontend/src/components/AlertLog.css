@@ -1,0 +1,70 @@
+.log-panel { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+.log-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.log-body {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.log-empty {
+  padding: 20px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.log-table thead tr {
+  position: sticky;
+  top: 0;
+  background: var(--bg3);
+  z-index: 1;
+}
+
+.log-table th {
+  padding: 7px 10px;
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.log-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(30,45,61,0.5);
+  color: var(--text);
+}
+
+.log-table tbody tr:hover { background: rgba(0,229,255,0.03); }
+
+.log-new td { color: var(--cyan); }
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+.cls-cell {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.conf { color: var(--green); }
+
+.time { color: var(--text-dim); font-size: 11px; }

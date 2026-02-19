@@ -1,0 +1,57 @@
+.controls-panel { flex-shrink: 0; }
+
+.controls-body { padding: 14px; display: flex; gap: 20px; flex-wrap: wrap; }
+
+.section { display: flex; flex-direction: column; gap: 8px; }
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.use-case-grid {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.uc-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+}
+.uc-btn:hover:not(:disabled) {
+  border-color: var(--cyan-dim);
+  color: var(--cyan);
+}
+.uc-btn.uc-active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0,229,255,0.08);
+}
+.uc-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.uc-icon { font-size: 15px; }
+
+.source-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.upload-name {
+  font-size: 12px;
+  color: var(--green);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 2px;
+}

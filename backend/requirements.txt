@@ -1,0 +1,26 @@
+# SENTINEL Backend Requirements
+# Python 3.10+
+
+# Web framework
+fastapi==0.111.0
+uvicorn==0.30.1
+websockets==12.0
+python-multipart==0.0.9
+aiofiles==23.2.1
+
+# Computer Vision
+opencv-python-headless==4.10.0.84
+
+# Deep Learning
+torch==2.3.1
+torchvision==0.18.1
+
+# YOLO + ByteTrack (built-in)
+ultralytics>=8.3.0
+
+# Numerical
+numpy==1.26.4
+scipy==1.13.1
+
+# Audio alert
+pygame==2.6.0
